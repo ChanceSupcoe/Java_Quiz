@@ -1,0 +1,85 @@
+:root {
+  --backgroundcolor: #191919;
+  --cardcolor: #2D4263;
+  --hovercolor:#C84B31;
+  --primarytext:#ffffff;
+  --secondarytext:#ECDBBA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#mainbody {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 100%;
+}
+
+.nav {
+	display:flex;
+	background-color: var(--cardcolor);
+}
+
+.nav a {
+	color: var(--secondarytext);
+	padding: 15px;
+  width: 48%;
+	text-decoration: none;
+	text-align: center;
+}
+
+.nav a:hover {
+	background-color: var(--hovercolor);
+	color: var(--primarytext);
+}
+
+#timer {
+  color: var(--secondarytext);
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  width: 48%;
+}
+
+button {
+    text-align: center;
+    display:block;
+    background-color: var(--cardcolor);
+    color: var(--secondarytext);
+    padding: auto;
+    font-size: 20px;
+    border-radius: 5px;
+}
+  
+li {
+    list-style-type: none;
+}
+
+#start-button {
+    text-align: center;
+    background-color: var(--cardcolor);
+    color: var(--secondarytext);
+    padding: auto;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#choices {
+  text-align: center;
+  display:block;
+  align-content: center;
+  padding: auto;
+  margin-left: 45%;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#question-div {
+   text-align: center;
+    display:block;
+    padding: auto;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
