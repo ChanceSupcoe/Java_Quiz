@@ -1,13 +1,13 @@
 let secondsLeft = 90;
 var timer = document.getElementById("timer");
-let scoresDiv = document.getElementById("scores-div");
+let scoresDiv = document.getElementById("scoresection");
 let buttonsDiv = document.getElementById("buttons")
 let viewScoresBtn = document.getElementById("view-scores")
 let startButton = document.getElementById("start-button");
 startButton.addEventListener("click", setTime);
-var questionDiv = document.getElementById("question-div");
+var questionDiv = document.getElementById("questionsection");
 let results = document.getElementById("results");
-var choices = document.getElementById("choices");
+var options = document.getElementById("options");
 let emptyArray = [];
 let storedArray = JSON.parse(window.localStorage.getItem("highScores"));
 var questionCount = 0;
@@ -33,7 +33,7 @@ function displayQuestions() {
 
   if (questionCount < questions.length) {
     questionDiv.innerHTML = questions[questionCount].title;
-    choices.textContent = "";
+    options.textContent = "";
 
     for (let i = 0; i < questions[questionCount].multiChoice.length; i++) {
       let el = document.createElement("button");
@@ -58,14 +58,14 @@ function displayQuestions() {
           displayQuestions();
         }
       });
-      choices.append(el);
+      options.append(el);
     }
   }
 }
 
 function captureUserScore() {
   timer.remove();
-  choices.textContent = "";
+  options.textContent = "";
 
   let initialsInput = document.createElement("input");
   let postScoreBtn = document.createElement("input");

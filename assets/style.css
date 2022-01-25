@@ -1,7 +1,6 @@
 :root {
-  --backgroundcolor: #191919;
-  --cardcolor: #2D4263;
-  --hovercolor:#C84B31;
+  --dkblue: #2D4263;
+  --bntorange:#C84B31;
   --primarytext:#ffffff;
   --secondarytext:#ECDBBA;
 }
@@ -18,7 +17,7 @@
 
 .nav {
 	display:flex;
-	background-color: var(--cardcolor);
+	background-color: var(--dkblue);
 }
 
 .nav a {
@@ -30,7 +29,7 @@
 }
 
 .nav a:hover {
-	background-color: var(--hovercolor);
+	background-color: var(--bntorange);
 	color: var(--primarytext);
 }
 
@@ -45,7 +44,7 @@
 button {
     text-align: center;
     display:block;
-    background-color: var(--cardcolor);
+    background-color: var(--dkblue);
     color: var(--secondarytext);
     padding: auto;
     font-size: 20px;
@@ -58,14 +57,14 @@ li {
 
 #start-button {
     text-align: center;
-    background-color: var(--cardcolor);
+    background-color: var(--dkblue);
     color: var(--secondarytext);
     padding: auto;
     font-size: 20px;
     border-radius: 5px;
 }
 
-#choices {
+#options {
   text-align: center;
   display:block;
   align-content: center;
@@ -75,7 +74,7 @@ li {
   border-radius: 5px;
 }
 
-#question-div {
+#questionsection {
    text-align: center;
     display:block;
     padding: auto;

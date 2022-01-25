@@ -31,14 +31,14 @@ var questions = [
 
     {
       title: "How does a FOR loop start?",
-      multiChoice: ["if i<>5", "if (i<>5)", "if i=!5 then", "if (i!=5)"],
-      answer: "if (i!=5)"
+      multiChoice: ["for i=1 to 5", "for (i=0;i<=5;i++)", "for(i<=5;i++)", "for(i=0;i<=5)"],
+      answer: "for (i=0;i<=5;i++)"
     },
 
     {
-      title: "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
-      multiChoice: ["for i=1 to 5", "for(i=0;i<=5;i++)", "for(i<=5;i++)", "for(i=0;i<-5)"],
-      answer: "for(i=0;i<=5;i++)"
+      title: "How can you add a comment in JavaScript?",
+      multiChoice: ["//This is a comment", "<!--This is a comment-->", "('This is a comment')", "--This is a comment--"],
+      answer: "//This is a comment"
     },
 
     {
